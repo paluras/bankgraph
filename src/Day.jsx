@@ -1,8 +1,6 @@
 import React from "react";
 import Data from '../data.json'
-
-const obj = JSON.stringify(Data)
-const stringData = JSON.parse(obj)
+import { useState } from 'react';
 
 function Day(props){
 
@@ -11,7 +9,7 @@ function Day(props){
     
     const lowHigh = {
       backgroundColor: clicked ? "#76b5bd" : "#eb755d",
-      width: "40px",
+      width: "100%",
       height:`${props.graph / 5}vh`,
       borderRadius: "3px",
       transition: "background-color 0.3s ease-in-out"
@@ -19,18 +17,14 @@ function Day(props){
   
     const showValue = {
         color: clicked ? "black" : "#fefcf6",
-        
         textAlign:"center",
         fontSize:"12px",
         transition: "color 0.3s ease-in-out"
         
     }
-  
     const handleClick = () => {
       setClicked(!clicked)
-     
     }
-  
     return(
       <div className={props.name} >
         <p style={showValue}>${props.graph}</p>
