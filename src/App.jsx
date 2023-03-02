@@ -11,7 +11,7 @@ function App() {
                 <p>My balance</p>
                 <h2>$921.48</h2>
               </div>
-              <img src='src\assets\logo.svg'></img>
+              <img src='https://raw.githubusercontent.com/paluras/bankgraph/cdf01eba7cd21770dcd1d9ad4fd95df11c23ee4a/src/assets/logo.svg'></img>
         </nav>
         <main>
           <div className='spendings'>Spending - Last 7 days</div>
