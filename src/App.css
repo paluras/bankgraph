@@ -31,6 +31,7 @@ nav{
     margin-bottom: 10px;
     padding: 1.5% 2%;
     width: 22%;
+    min-width: 396px;
 }
 
 .left-nav > h2{
@@ -50,6 +51,7 @@ main{
     justify-content: space-around;
     padding: 0px 2% 0px;
     border-radius: 15px;
+    min-width: 396px;
 }
 
 .spendings {
@@ -61,7 +63,7 @@ main{
     flex-direction:row;
     overflow: hidden;
     align-items: end;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 5px;
     height: 150px;
     width: 100%;
