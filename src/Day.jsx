@@ -9,7 +9,6 @@ function Day(props){
     
     const lowHigh = {
       backgroundColor: clicked ? "#76b5bd" : "#eb755d",
-      width: "50px",
       height:`${props.graph / 5}vh`,
       borderRadius: "3px",
       transition: "background-color 0.3s ease-in-out"
@@ -18,7 +17,7 @@ function Day(props){
     const showValue = {
         color: clicked ? "black" : "#fefcf6",
         textAlign:"center",
-        fontSize:"12px",
+        fontSize:"0.6em",
         transition: "color 0.3s ease-in-out"
         
     }

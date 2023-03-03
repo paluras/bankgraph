@@ -63,11 +63,13 @@ main{
     flex-direction:row;
     overflow: hidden;
     align-items: end;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 5px;
     height: 150px;
-    width: 100%;
 }
+.weekGraph > div {
+    width: 50px;
+} 
 .bottom-spendings{
     display: flex;
     justify-content: space-between;
@@ -95,4 +97,19 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav{
+        min-width: 300px;
+    }
+
+    main{
+        min-width: 300px;
+    }
+
+    .weekGraph > div {
+        width: 40px;
+    } 
 }
